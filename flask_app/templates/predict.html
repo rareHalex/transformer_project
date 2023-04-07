@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>predict</title>
+</head>
+<body>
+
+
+<h1>Title of the article </h1>
+<h2>{{title}}</h2>
+
+<h1>Abstract</h1>
+<h2>{{text}}</h2>
+
+
+<h1>Topic of the article</h1>
+{% for el in pred_arr %}
+<p>{{ el }}</p>
+{% endfor %}
+
+
+<li><a href="/main" class="nav-link px-2 link-secondary">Home</a></li>
+
+</body>
+</html>
