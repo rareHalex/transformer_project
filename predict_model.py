@@ -47,8 +47,7 @@ def prediction_model(title, abstract, strimlit_prediction=False):
         while prob_sum <= 95:
             prob_sum += probs[idx]
             target_of_paper = target_dict[str(int(labels[idx]))]
-            if idx <= 5:
-                st.write(target_of_paper)
+            st.write(target_of_paper)
             answer.append(target_of_paper)
             target_dict[target_of_paper] = float(probs[idx])
             idx += 1
